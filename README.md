@@ -1,16 +1,16 @@
-# CSS-isme
+# Socioparilla
 
-A quick start template for (hopefully) better websites. "Karena koding adalah harapan."
+A quick start template for (hopefully) better websites. Used in [Sociolla.com](http://www.sociolla.com)
 
-![CSS-isme](https://c1.staticflickr.com/1/720/21400091239_0ff5424eb0_h.jpg)
+![Socioparilla](https://c1.staticflickr.com/1/720/21400091239_0ff5424eb0_h.jpg)
 
 ## Overview
 
-CSS-isme is a set of default rules and styles that starts everything I do at [andreanisme.co](http://andreanisme.co) in a consistent manner. 
+Socioparilla is a set of default rules and styles that starts everything I do at [Sociolla.com](http://www.sociolla.com) in a consistent manner. 
 
 It’s not a boilerplate or a theme.
 
-CSSisme on the other hand, is a nice refreshing root beer. Perhaps crack one open while you’re reading this.
+Socioparilla on the other hand, is a nice refreshing SASSaparilla. Perhaps crack one open while you’re reading this.
 
 --- 
 
@@ -22,7 +22,7 @@ If you're ready to go, then simply delete the demo files and folders from assets
 
 ## Getting Sass(y) with Compass
 
-CSS-isme uses the power of [Sass](http://Sass-lang.com) via SCSS and [Compass](http://compass-style.org) to create flexible stylesheets that I can re-use and add to over time.
+Socioparilla uses the power of [Sass](http://Sass-lang.com) via SCSS and [Compass](http://compass-style.org) to create flexible stylesheets that I can re-use and add to over time.
 
 Compass is a library of common elements, equations and helper styles that is kept up-to-date by a community of developers and is useful for rapid development and leaner code.
 
@@ -45,13 +45,13 @@ If you have trouble, try using the ‘sudo commands’ (with care) to access the
 ### sudo gem update --system 
 ### sudo gem install compass
 
-Of course, if you’re running CSS-isme through [Mixture](http://mixture.io) you won’t need to do any of that.
+Of course, if you’re running Socioparilla through [Mixture](http://mixture.io) you won’t need to do any of that.
 
 --- 
 
 ## CSS set-up
 
-CSS-isme follows a specific cascade, and makes use of several SCSS files, each of which serves a different purpose.
+Socioparilla follows a specific cascade, and makes use of several SCSS files, each of which serves a different purpose.
 
 Note: If a file begins with an underscore, that file will not compile to its own css file. Files with underscores are considered includes.
 
@@ -89,7 +89,7 @@ Contains default form elements and standard styling. If you’re not using forms
 
 ### grid.scss
 
-Contains the main functionality of the CSS-isme grid system. This file is where you add your columns and define your syntax for the surrounding ‘.rows’ in your content. I’ll touch on how to use this later.
+Contains the main functionality of the Socioparilla grid system. This file is where you add your columns and define your syntax for the surrounding ‘.rows’ in your content. I’ll touch on how to use this later.
 
 --- 
 
@@ -126,7 +126,7 @@ You’ll see our default breakpoints that I’ve used in the demo as a (somewhat
 	$max-vp 							: $f-vp; 	// max viewport. Syntactically makes for a nicer option
 	$start-columns 						: $b-vp;	// Switch from single column to multi at this breakpoint (used in grid)
 
-This set up allows you to define your syntax for your breakpoints as you wish. It also includes some variables that are required if using the CSS-isme grid.
+This set up allows you to define your syntax for your breakpoints as you wish. It also includes some variables that are required if using the Socioparilla grid.
 
 You’ll notice I’ve used alphabetical viewport names, to indicate where in the mobile first set-up they come. This way I can avoid using names such as tablet or mobile, which are too descriptive of a size.
 
@@ -156,21 +156,21 @@ That’s it. Have a play and see how you get on.
 
 --- 
 
-## CSS-isme grid system
+## Socioparilla grid system
 
-The grid system works a little differently than other grids you may have used in the past. That’s not always a bad thing, but as I always, use what is most appropriate for each project. CSS-isme works best for simple grids layouts that require fine grain control at multiple breakpoints.
+The grid system works a little differently than other grids you may have used in the past. That’s not always a bad thing, but as I always, use what is most appropriate for each project. Socioparilla works best for simple grids layouts that require fine grain control at multiple breakpoints.
 
 If you need an un-equal grid, multiple layer nesting or something more complex, then perhaps it’s not for you.
 
-CSS-isme has one main goal:
+Socioparilla has one main goal:
 
 To allow for scalability and user-additions, that can be undertaken in an iterative manner. 
 
 ### How it works
 
-CSS-isme works by combining box-sizing:border-box and padding to space elements, and percentages to define column widths. As box-sizing:border-box considers padding as part of the box model, and not additional to it, I can use easy mathematics to generate our grid columns.
+Socioparilla works by combining box-sizing:border-box and padding to space elements, and percentages to define column widths. As box-sizing:border-box considers padding as part of the box model, and not additional to it, I can use easy mathematics to generate our grid columns.
 
-In short CSS-isme can do two things.
+In short Socioparilla can do two things.
 + Provide percentage with columns with no gutters, based on the amount of columns. You can then use internal padding to space elements apart.
 + Provide percentage with columns with gutters by adding an additional, consistent gutter padding and dragging a whole row negatively by the same consistent gutter padding.
 
@@ -387,7 +387,7 @@ Have a play.
 
 ## Compass rhythm and leading
 
-CSS-isme tries to make leading and spacing as easy as possible, whilst writing accessible code. I not mad keen on tricky maths, but I like to write in ems. Luckily, compass can handle this for us with a few smart defaults, tricks and a few commands. Here’s how:
+Socioparilla tries to make leading and spacing as easy as possible, whilst writing accessible code. I not mad keen on tricky maths, but I like to write in ems. Luckily, compass can handle this for us with a few smart defaults, tricks and a few commands. Here’s how:
 
 #### In settings.scss
 
@@ -429,7 +429,7 @@ If you want to vertically space other elements on the page (sections etc…) you
 
 #### One final trick
 
-Say – for example you’d like to add a pixel value to a media query, but you’d like to have that value convert to the relevant em value for the base-line-height or base-font-size. That might mean a few calculations. CSS-isme includes two functions to help with this.
+Say – for example you’d like to add a pixel value to a media query, but you’d like to have that value convert to the relevant em value for the base-line-height or base-font-size. That might mean a few calculations. Socioparilla includes two functions to help with this.
 
 	em-font(#px) // converts the value to pixels, based on the base-font-size.
 	
@@ -444,7 +444,7 @@ Copy assets and config.rb into your theme folder.
 
 ---
 
-## CSS-isme markup guidelines
+## Socioparilla markup guidelines
 
 - No ID’s for styling
 - Write in all lowercase and separate each word with a dash (.global-header)

@@ -1,3 +1,5 @@
+![Socioparilla](http://andreanisme.co/cssisme/socioparrilla.png)
+
 # Socioparilla
 
 A quick start template for (hopefully) better websites. Used in [Sociolla.com](http://www.sociolla.com)
